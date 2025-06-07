@@ -6,29 +6,30 @@
 int main(int argc, char*argv[])
 {
   // Create int var for each flag
-  int cflg, lflf, wflg, mflg, errflg;
+  int c_flag, l_flag, w_flag, m_flag, err_flag;
+  int byte_count, line_count;
 
  
   // this uses the optstring syntax
   while((c = getopt(argc, argc, ":clwm")) != -1) {
     switch(c) {
       case 'c':
-        cflg = 1;
+        c_flag = 1;
         break;
       case 'l':
-        lflg = 1;
+        l_flag = 1;
         break;
       case 'w':
-        wflg = 1;
+        w_flag = 1;
         break;
       case 'm':
-        mflg = 1;
+        m_flag = 1;
         break;
       // Unknown flag provided
       case '?':
-        errflg = 1;
+        err_flag = 1;
         // optopt is a global integer variable in unistd.h which contains the unknown char
-        fprintf(stderr, "Unrecognized option: -%c\n", optopt)
+        fprintf(stderr, "Unrecognized option: -%c\n", optopt);
       default:
         break;
     }
