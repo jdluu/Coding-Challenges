@@ -60,3 +60,8 @@ The goal is to build `ccwc` (Coding Challenge Word Count) step-by-step, adding n
     ```bash
     cat test.txt | ./ccwc -l
     ```
+
+## References
+
+- [C Standard Library documentation for file I/O functions.](https://en.cppreference.com/w/c/io)
+- [POSIX `getopt` documentation for parsing command-line options.](https://pubs.opengroup.org/onlinepubs/009696799/functions/getopt.html)
