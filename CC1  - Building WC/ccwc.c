@@ -1,20 +1,30 @@
 #include <stdio.h> // For fille I/O
+#include <stdlib.h> // For EXIT_SUCCESS and EXIT_FAILURE macros.
 #include <unistd.h> // For getopt()
 #include <string.h> // String Operations
 
 // Read in number of args and array of args
 int main(int argc, char*argv[])
 {
+  int c;
   // Create int var for each flag
-  int c_flag, l_flag, w_flag, m_flag, err_flag;
+  int c_flag = 0;
+  int l_flag = 0;
+  int w_flag = 0;
+  int m_flag = 0;
+  int err_flag = 0;
+
   // Counter variables
-  int byte_count, line_count, word_count, char_count;
+  long byte_count = 0; 
+  long line_count = 0; 
+  long word_count = 0; 
+  long char_count = 0;
   
   char *filename = NULL;
   FILE *file_ptr = NULL;
 
   // this uses the optstring syntax
-  while((c = getopt(argc, argc, ":clwm")) != -1) {
+  while((c = getopt(argc, argv, ":clwm")) != -1) {
     switch(c) {
       case 'c':
         c_flag = 1;
@@ -40,8 +50,19 @@ int main(int argc, char*argv[])
   }
   // Exit without any output when err_flag raised
   if (err_flag) {
-    fprintf(stderr, "Unknown flag provided! Exiting!");
+    fprintf(stderr, "Usage: %s [-c] [-l] [-w] [-m] [file]\n", argv[0]);
+    exit(EXIT_FAILURE);
   }
+  
+  // Default Behavior is to count bytes, lines, and words
+  if (!c_flag && !l_flag && !w_flag && !m_flag) {
+    c_flag = 1;
+    l_flag = 1;
+    w_flag = 1;
+  }
+
+
+
 
 
 
