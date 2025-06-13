@@ -28,7 +28,7 @@ The goal is to build `ccwc` (Coding Challenge Word Count) step-by-step, adding n
   - Implement the `-m` option to count the number of characters, accounting for multi-byte characters.
   - Example: `ccwc -m test.txt` should output `339292 test.txt`.
 
-- [ ] **Step 5: Default Option**
+- [x] **Step 5: Default Option**
 
   - If no options are provided, the tool should output the line, word, and byte counts.
   - Example: `ccwc test.txt` should output `7145   58164  342190 test.txt`.
