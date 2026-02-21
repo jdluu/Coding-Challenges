@@ -1,0 +1,8 @@
+[package]
+name = "wc_tool"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "001-wc-tool"
+path = "src/main.rs"
