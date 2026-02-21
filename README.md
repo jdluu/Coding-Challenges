@@ -20,7 +20,7 @@ This repository contains my solutions to the [Coding Challenges](https://codingc
 
 | # | Challenge Name | Status | Tech Stack | Original Post | Solution |
 | :--- | :--- | :---: | :--- | :--- | :--- |
-| 001 | wc Tool | `[ ]` | | [Link](https://codingchallenges.fyi/challenges/challenge-wc) | [Folder](https://github.com/jdluu/Coding-Challenges/tree/main/001-wc-tool) |
+| 001 | wc Tool | `[-]` | | [Link](https://codingchallenges.fyi/challenges/challenge-wc) | [Folder](https://github.com/jdluu/Coding-Challenges/tree/main/001-wc-tool) |
 | 002 | JSON Parser | `[ ]` | | [Link](https://codingchallenges.fyi/challenges/challenge-json-parser) | [Folder](https://github.com/jdluu/Coding-Challenges/tree/main/002-json-parser) |
 | 003 | Compression Tool | `[ ]` | | [Link](https://codingchallenges.fyi/challenges/challenge-huffman) | [Folder](https://github.com/jdluu/Coding-Challenges/tree/main/003-compression-tool) |
 | 004 | cut Tool | `[ ]` | | [Link](https://codingchallenges.fyi/challenges/challenge-cut) | [Folder](https://github.com/jdluu/Coding-Challenges/tree/main/004-cut-tool) |
